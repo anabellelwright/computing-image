@@ -4,7 +4,7 @@
 <body></body>
 <script>
   const gifWidth = 399
-  const gifHeight = 120
+  const gifHeight = 124
   const gifOffsetX = 50
   const gifOffsetY = 50
   const numColumns = window.innerWidth / gifWidth
@@ -13,7 +13,7 @@
   
   function createGif(x, y) {
     const gif = document.createElement('img')	
-    gif.src = gifURL
+    gif.src = gifURL + '#' + Math.random()
     gif.style.position = 'absolute'
     gif.style.left = x + 'px'
     gif.style.top = y + 'px'
